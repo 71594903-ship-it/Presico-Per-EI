@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presico Perú - Flujo de Proceso</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="estilos.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Presico Perú</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tienda.html">Créditos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="noticias.html">Novedades</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5">Flujo de Roles y Solicitudes</h1>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="coordinadora-tab" data-bs-toggle="tab" data-bs-target="#coordinadora" type="button" role="tab" aria-controls="coordinadora" aria-selected="true">Coordinadora</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="cliente-tab" data-bs-toggle="tab" data-bs-target="#cliente" type="button" role="tab" aria-controls="cliente" aria-selected="false">Cliente</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="solicitud-tab" data-bs-toggle="tab" data-bs-target="#solicitud" type="button" role="tab" aria-controls="solicitud" aria-selected="false">Solicitud</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="coordinadora" role="tabpanel" aria-labelledby="coordinadora-tab">
+                <h2 class="mt-4 mb-3">Conoce a tu Coordinadora de Campo</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="assets/img2.jpg" class="card-img-top" alt="Coordinadora de Presico Perú" style="height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Rol: Enlace Comunitario</h5>
+                                <p class="card-text">Nuestra Coordinadora es la persona clave para iniciar tu microcrédito. Te asesora y acompaña en todo el proceso en tu comunidad.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Asesoría gratuita! Pregunta por tu zona.">
+                                    <i class="bi bi-person-check"></i> Consultar Disponibilidad
+                                </button>
+                                <a href="contacto.html" class="btn btn-outline-secondary">Ver Zonas de Atención</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="cliente" role="tabpanel" aria-labelledby="cliente-tab">
+                <h2 class="mt-4 mb-3">Beneficios Exclusivos para Clientes</h2>
+                <p class="lead">Si ya eres parte de la familia Presico Perú, accede a: </p>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-wallet-fill text-success me-2"></i> Pagos flexibles adaptados a tu ciclo productivo.</li>
+                    <li class="list-group-item"><i class="bi bi-graph-up-arrow text-primary me-2"></i> Prioridad en la renovación de tu línea de crédito.</li>
+                    <li class="list-group-item"><i class="bi bi-bell-fill text-warning me-2"></i> Alertas de mercado y precios de insumos por SMS.</li>
+                </ul>
+                <a href="#" class="btn btn-info text-white mt-3">Acceso al Portal del Cliente</a>
+            </div>
+
+            <div class="tab-pane fade" id="solicitud" role="tabpanel" aria-labelledby="solicitud-tab">
+                <h2 class="mt-4 mb-3">Inicia tu Microcrédito Ahora</h2>
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle-fill me-2"></i> Para iniciar una solicitud formal de crédito, haz clic en el botón de abajo.
+                </div>
+                <p class="card-text">Recuerda tener a mano tu DNI y la información de tu actividad productiva para acelerar el proceso.</p>
+                <a href="contacto.html" class="btn btn-danger btn-lg w-75 fw-bold">
+                    <i class="bi bi-file-earmark-text-fill me-2"></i> Ir al Formulario de Solicitud
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">Evaluación Integral ISIL © 2025-II | Presico Perú.</p>
+            <p class="small">Curso de Diseño y Desarrollo Web | Docente: Edgar David Rodriguez.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

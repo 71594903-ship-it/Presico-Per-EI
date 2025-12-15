@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presico Perú - Noticias</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="estilos.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Presico Perú</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5">Novedades y Preguntas del Sistema</h1>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="mt-4 mb-3">Alertas Categorizadas (Tabs)</h2>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-todas-tab" data-bs-toggle="pill" data-bs-target="#pills-todas" type="button" role="tab" aria-controls="pills-todas" aria-selected="true">Todas (3)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-exito-tab" data-bs-toggle="pill" data-bs-target="#pills-exito" type="button" role="tab" aria-controls="pills-exito" aria-selected="false">Éxito (1)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-critico-tab" data-bs-toggle="pill" data-bs-target="#pills-critico" type="button" role="tab" aria-controls="pills-critico" aria-selected="false">Crítico (1)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-aviso-tab" data-bs-toggle="pill" data-bs-target="#pills-aviso" type="button" role="tab" aria-controls="pills-aviso" aria-selected="false">Aviso (1)</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-todas" role="tabpanel" aria-labelledby="pills-todas-tab">
+                        <h5 class="mb-3">Registro Completo</h5>
+                        <div class="alert alert-success">[Éxito] Se ha desplegado la versión 5.3.3 de Bootstrap.</div>
+                        <div class="alert alert-danger">[Crítico] Retraso en la carga de imágenes. Estamos trabajando en una solución.</div>
+                        <div class="alert alert-warning">[Aviso] La base de datos estará en mantenimiento este fin de semana.</div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-exito" role="tabpanel" aria-labelledby="pills-exito-tab">
+                        <div class="alert alert-success">[Éxito] Se ha desplegado la versión 5.3.3 de Bootstrap.</div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-critico" role="tabpanel" aria-labelledby="pills-critico-tab">
+                        <div class="alert alert-danger">[Crítico] Retraso en la carga de imágenes. Estamos trabajando en una solución.</div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-aviso" role="tabpanel" aria-labelledby="pills-aviso-tab">
+                        <div class="alert alert-warning">[Aviso] La base de datos estará en mantenimiento este fin de semana.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h2 class="mt-4 mb-3">Preguntas Frecuentes (Acordeón)</h2>
+                <div class="accordion" id="accordionNoticias">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWebinar" aria-expanded="true" aria-controls="collapseWebinar">
+                                ¿Cuándo es el próximo webinar?
+                            </button>
+                        </h2>
+                        <div id="collapseWebinar" class="accordion-collapse collapse show" data-bs-parent="#accordionNoticias">
+                            <div class="accordion-body">
+                                El próximo evento en vivo será el **30 de Noviembre**. Consulta la sección de Blog para más detalles sobre la inscripción.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseError" aria-expanded="false" aria-controls="collapseError">
+                                ¿Cómo reporto un error en la tienda?
+                            </button>
+                        </h2>
+                        <div id="collapseError" class="accordion-collapse collapse" data-bs-parent="#accordionNoticias">
+                            <div class="accordion-body">
+                                Utiliza el formulario en la página de **Contacto** y selecciona "Queja/Reclamo" en el motivo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOfertas" aria-expanded="false" aria-controls="collapseOfertas">
+                                ¿Hay nuevas ofertas disponibles?
+                            </button>
+                        </h2>
+                        <div id="collapseOfertas" class="accordion-collapse collapse" data-bs-parent="#accordionNoticias">
+                            <div class="accordion-body">
+                                ¡Sí! Revisa la pestaña de "Novedades" en la sección **Tienda**.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">Evaluación Integral ISIL © 2025-II | Presico Perú.</p>
+            <p class="small">Curso de Diseño y Desarrollo Web | Docente: Edgar David Rodriguez.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
