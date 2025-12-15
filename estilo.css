@@ -1,18 +1,134 @@
-/* estilos.css */
+/* ============================================== */
+/* 1. VARIABLES Y ESTILOS BASE */
+/* ============================================== */
 
-/* Por defecto, lo dejamos vacío para la entrega,
-   pero puedes añadir aquí estilos como:
-
-/* Cambiar la fuente global: */
-/*
+/* Define la tipografía base para todo el proyecto (ej: una fuente moderna sin serifa) */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Fondo claro para contraste */
+    color: #343a40; /* Texto principal oscuro */
 }
-*/
 
-/* Personalizar el color primario (si lo deseas): */
-/*
-.bg-primary {
-    background-color: #007bff !important;
+/* Colores de Bootstrap (si quieres cambiar el tema, modifica estas variables) */
+:root {
+    --bs-primary: #0d6efd; /* Azul de Bootstrap (para Navbar y botones principales) */
+    --bs-success: #198754; /* Verde (para logros, metas, etc.) */
+    --bs-warning: #ffc107; /* Amarillo (para alertas o énfasis en emprendimiento) */
+    --bs-dark: #212529; /* Color oscuro del Footer */
 }
-*/
+
+/* Títulos principales */
+h1, h2, h3 {
+    font-weight: 700; /* Negrita para impacto */
+    margin-bottom: 0.75rem;
+}
+
+/* ============================================== */
+/* 2. ESTILOS DE NAVEGACIÓN Y FOOTER */
+/* ============================================== */
+
+/* Navbar - Oscuro y sólido */
+.navbar {
+    border-bottom: 3px solid var(--bs-warning); /* Línea de color de énfasis debajo de la Navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo del link activo en la Navbar */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--bs-warning) !important; /* Resalta el enlace activo con el color de advertencia/énfasis */
+}
+
+/* Estilo del Footer */
+footer {
+    border-top: 5px solid var(--bs-primary);
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* ============================================== */
+/* 3. ESTILOS DE COMPONENTES (CARDS, BUTTONS) */
+/* ============================================== */
+
+/* Estilo general de las tarjetas (Cards) */
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para hover */
+    border: none; /* Quitamos el borde predeterminado */
+}
+
+/* Efecto de elevación al pasar el mouse sobre las Cards */
+.card:hover {
+    transform: translateY(-5px); /* Se levanta 5px */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Botones principales - con transición para un look moderno */
+.btn {
+    border-radius: 50px; /* Bordes redondeados para un aspecto más amigable */
+    transition: background-color 0.3s ease-in-out, transform 0.1s;
+    font-weight: 600;
+}
+
+/* Pequeño efecto de pulsación al hacer clic */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* ============================================== */
+/* 4. SECCIÓN ESPECÍFICA DE INDEX (CAROUSEL) */
+/* ============================================== */
+
+/* Contenedor principal del Carousel/Hero */
+.carousel-item {
+    min-height: 450px; /* Asegura una altura mínima */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overlay oscuro para mejorar la legibilidad del texto en el Carousel */
+.carousel-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Sombra oscura */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Título de la sección de características (Index) */
+#caracteristicas h2 {
+    color: var(--bs-primary);
+}
+
+/* ============================================== */
+/* 5. FORMULARIOS Y TABS */
+/* ============================================== */
+
+/* Campos de formulario */
+.form-control, .form-select {
+    border-radius: 8px;
+}
+
+/* Pestañas de Contacto/Tienda */
+.nav-tabs .nav-link.active, .nav-pills .nav-link.active {
+    background-color: var(--bs-primary);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Iconos destacados */
+.bi {
+    vertical-align: -0.125em; /* Alinea los íconos con el texto */
+}
+
+/* Estilo para los ítems de lista en Nosotors/Tienda */
+.list-group-item {
+    border-left: 5px solid var(--bs-success);
+    margin-bottom: 5px;
+    transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
